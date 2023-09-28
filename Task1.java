@@ -7,7 +7,7 @@ public class Task1 {
         //примитивные типы данных (все они просто цифры, которые хранятся в стеке)
         byte b;
         short sh;
-        int i;
+        int i = 3;
         long l;
 
         float f;
@@ -44,7 +44,7 @@ public class Task1 {
         System.out.println(s1.replace("p", "s"));//так можно удалять ненужные символы из строки
         //или менять один символ на другой
         s1 = null; //
-        System.out.println(s1);
+        System.out.println((String) null);
 
         System.out.println(i);
         System.out.println(i++); // сначала выполняет команду а потом ++
