@@ -42,6 +42,12 @@ public class Task1 {
         s1 += "!";
 
         System.out.println(s1.replace("p", "s"));//так можно удалять ненужные символы из строки
+        //или менять один символ на другой
+        s1 = null; //
         System.out.println(s1);
+
+        System.out.println(i);
+        System.out.println(i++); // сначала выполняет команду а потом ++
+        System.out.println(--i); // сначала выполняет -- потом команду
     }
 }
