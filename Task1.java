@@ -1,5 +1,7 @@
 package SeminarsAPI4892;
 
+import java.util.Random;
+
 public class Task1 {
     public static void main(String[] args) {
         //примитивные типы данных (все они просто цифры, которые хранятся в стеке)
@@ -25,9 +27,21 @@ public class Task1 {
         for (int j = 0; j < ints.length; j++) {
             tmp[j] = ints[j];
         }
+        for (int j = 0; j < ints.length; j++) {
+            ints[j] = new Random().nextInt(200);//заполнение рандомными цыфрами
+            tmp[j] = ints[j];
+
+        }
         ints = tmp;
+        ints[ints.length - 1] = 1000;
 
         System.out.println(ints);//в работе sout очень редко используется
         //int.sout = System.out.println(ints);
+
+        String s1 = "Hello";
+        s1 += "!";
+
+        System.out.println(s1.replace("p", "s"));//так можно удалять ненужные символы из строки
+        System.out.println(s1);
     }
 }
